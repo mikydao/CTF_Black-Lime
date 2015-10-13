@@ -1,0 +1,13 @@
+/*  phpBB 3.0 Style Sheet
+    --------------------------------------------------------------
+	Style name:		CTF_Black-Lime
+	Based on style:	proSilver (this is the default phpBB 3 style)
+	Original author:	subBlue ( http://www.subBlue.com/ )
+	Modified by:		DaVidU ( http://www.coloreatuforo.com/ )
+	
+	Copyright 2006 phpBB Group ( http://www.phpbb.com/ )
+    --------------------------------------------------------------
+*/
+
+@import url("../../prosilver/theme/stylesheet.css");
+@import url("ctf_black-lime.css");
