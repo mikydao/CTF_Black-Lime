@@ -2373,6 +2373,7 @@ a.button1, input.button1, input.button3, a.button2, input.button2 {
     color: #eeeeee;
     padding: 5px !important;
     border-radius: 5px;
+    margin-bottom: 7px;
     transition: all 0.5s;
 }
 a.button1, input.button1 {
