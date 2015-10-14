@@ -1163,11 +1163,19 @@ Colours and backgrounds for buttons.css
     width: 100%;
 }
 
+.post-buttons .icon-button{
+    padding:  5px 7px;
+    background-image: none;
+}
+
 .postbody ul.profile-icons li {
     margin: 0 3px;
 }
 
-
+.postbody .content{
+  margin-top: 20px;
+  border-top: 2px inset #EEEEEE;
+}
 
 ul.profile-icons li.edit-icon {
     margin: 0 0 0 3px;
