@@ -1130,6 +1130,7 @@ Colours and backgrounds for buttons.css
     background-image: -webkit-linear-gradient(top, #555555, #252525);
     background-image: linear-gradient(to bottom, #555555, #252525);
     box-shadow: 0 0 0 1px #adff6b inset;
+     transition: all 0.5s;
 }
 .button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #252525), color-stop(1, #555555));
@@ -1138,9 +1139,8 @@ Colours and backgrounds for buttons.css
     background-image: -webkit-linear-gradient(top, #252525, #555555);
     background-image: linear-gradient(to bottom, #252525, #555555);
     text-shadow: none;
-    color: #FFFFFF;
     box-shadow: 0 0 0 1px #9f4ce0 inset;
-    transition: all 0.5s;
+
 }
 
 .button div {
@@ -1162,132 +1162,12 @@ Colours and backgrounds for buttons.css
     position: absolute;
     width: 100%;
 }
-.button div a:hover span {
-    background-position: 0 100%;
-}
 
-.post-buttons .icon-button{
-    padding: 5px 7px;
-    background-image: none;
-}
-
-.reply-icon span {
-    background: transparent none no-repeat scroll 0 0;
-}
-.post-icon span {
-    background: transparent none no-repeat scroll 0 0;
-}
-.locked-icon span {
-    background: transparent none no-repeat scroll 0 0;
-}
-.pmreply-icon span {
-    background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
-}
-.newpm-icon span {
-    background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
-}
-.forwardpm-icon span {
-    background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
-}
-.buttons div.reply-icon {
-    height: 25px;
-    width: 93px;
-}
-.buttons div.post-icon {
-    height: 25px;
-    width: 106px;
-}
-.buttons div.locked-icon {
-    height: 25px;
-    width: 83px;
-}
-.buttons div.pmreply-icon {
-    height: 25px;
-    width: 93px;
-}
-.buttons div.newpm-icon {
-    height: 25px;
-    width: 91px;
-}
-.buttons div.forwardpm-icon {
-    height: 25px;
-    width: 83px;
-}
-a.print, a.sendemail, a.fontsize {
-    background-repeat: no-repeat;
-    display: block;
-    height: 18px;
-    overflow: hidden;
-    text-align: left;
-    text-indent: -5000px;
-}
-a.print {
-    background-image: none;
-    width: 22px;
-}
-a.sendemail {
-    background-image: none;
-    width: 22px;
-}
-a.fontsize {
-    background-image: none;
-    background-position: 0 -1px;
-    width: 29px;
-}
-a.fontsize:hover {
-    background-position: 0 -20px;
-    text-decoration: none;
-}
-
-ul.profile-icons {
-    list-style: outside none none;
-    padding-top: 10px;
-}
-ul.profile-icons li {
-    background-position: 0 100%;
-    float: left;
-    margin: 0 6px 3px 0;
-}
-ul.profile-icons li a {
-    background-position: 0 0;
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-ul.profile-icons li span {
-    display: none;
-}
-ul.profile-icons li a:hover {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-}
-.postbody ul.profile-icons {
-    float: right;
-    padding: 0;
-    width: auto;
-}
 .postbody ul.profile-icons li {
     margin: 0 3px;
 }
 
-ul.profile-icons li.email-icon, ul.profile-icons li.aim-icon, ul.profile-icons li.yahoo-icon, ul.profile-icons li.web-icon, ul.profile-icons li.msnm-icon, ul.profile-icons li.icq-icon, ul.profile-icons li.jabber-icon, ul.profile-icons li.report-icon, ul.profile-icons li.delete-icon, ul.profile-icons li.info-icon, ul.profile-icons li.warn-icon {
-    height: 20px;
-    width: 20px;
-}
 
-
-ul.profile-icons li.pm-icon {
-    height: 20px;
-    width: 28px;
-}
-ul.profile-icons li.quote-icon {
-    height: 20px;
-    width: 53px;
-}
-
-ul.profile-icons li.edit-icon {
-    height: 20px;
-    width: 53px;
-}
 
 ul.profile-icons li.edit-icon {
     margin: 0 0 0 3px;
