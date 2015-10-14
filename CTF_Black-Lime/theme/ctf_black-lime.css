@@ -9,11 +9,6 @@
 
 /* common.css changes */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 *::after, *::before {
     box-sizing: border-box;
 }
@@ -31,7 +26,6 @@ body {
     margin: 0;
     padding: 20px 0;
 }
-
 h1 {
     color: #ffffff;
 }
@@ -63,6 +57,7 @@ hr.dashed {
 p {
     color: #bbb;
 }
+
 
 .inside {
     padding: 30px 30px 15px;
@@ -151,6 +146,7 @@ body.simple {
 
 .post:target .content {
     color: #bbbbbb;
+    margin-top: 15px;
 }
 .post:target h3 a {
     color: #bbbbbb;
@@ -689,18 +685,7 @@ ul.topiclist dfn {
     background: -o-linear-gradient(top,  rgba(70,70,70,1) 0%,rgba(70,70,70,1) 77%,rgba(85,85,85,1) 86%,rgba(102,102,103,1) 93%,rgba(120,121,120,1) 100%);
     background: -ms-linear-gradient(top,  rgba(70,70,70,1) 0%,rgba(70,70,70,1) 77%,rgba(85,85,85,1) 86%,rgba(102,102,103,1) 93%,rgba(120,121,120,1) 100%);
     background: linear-gradient(to bottom,  rgba(70,70,70,1) 0%,rgba(70,70,70,1) 77%,rgba(85,85,85,1) 86%,rgba(102,102,103,1) 93%,rgba(120,121,120,1) 100%);
-    left: -999px;
-    position: absolute;
-    width: 990px;
-}
 
-ul.topiclist li.row dt a.subforum {
-    background-image: none;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    padding: 0 0 0 12px;
-    position: relative;
-    white-space: nowrap;
 }
 
 dl.icon dt .list-inner {
@@ -862,9 +847,6 @@ dd.info {
     width: 30%;
 }
 dd.option {
-    font-size: 1.1em;
-    line-height: 200%;
-    text-align: center;
     width: 15%;
 }
 dd.searchby {
@@ -891,15 +873,13 @@ ul.topiclist dd.searchextra {
 div.topic-actions[class] {
     height: auto;
 }
+
+/* Post body styles
+----------------------------------------*/
 .postbody {
     color: #bbbbbb;
 }
-.postbody .ignore {
-    font-size: 1.1em;
-}
-.postbody h3.first {
-    font-size: 1.7em;
-}
+
 .postbody h3 {
     border: medium none;
     font-family: "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif;
@@ -909,42 +889,7 @@ div.topic-actions[class] {
     padding: 2px 0 0;
     text-transform: none;
 }
-.postbody h3 img {
-    vertical-align: bottom;
-}
-.postbody .content {
-    margin-top: 30px;
-}
-.search .postbody {
-    width: 68%;
-}
-#review {
-    margin-top: 2em;
-}
-#topicreview {
-    height: 300px;
-    overflow: auto;
-    padding-right: 5px;
-}
-#topicreview .postbody {
-    float: none;
-    height: auto;
-    margin: 0;
-    width: auto;
-}
-#topicreview .post {
-    height: auto;
-}
-#topicreview h2 {
-    border-bottom-width: 0;
-}
-.post-ignore .postbody {
-    display: none;
-}
-#post_details {
-    max-height: 300px;
-    overflow: auto;
-}
+
 #expand {
     clear: both;
 }
@@ -954,48 +899,12 @@ div.topic-actions[class] {
 .content h2, .panel h2 {
     border-bottom: 1px solid #cccccc;
     color: #989898;
-    font-size: 1.6em;
-    font-weight: normal;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    padding-bottom: 0.5em;
 }
-.panel h3 {
-    margin: 0.5em 0;
-}
-.panel p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    margin-bottom: 1em;
-}
-.content p {
-    font-family: "Lucida Grande","Trebuchet MS",Verdana,Helvetica,Arial,sans-serif;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    margin-bottom: 1em;
-}
-dl.faq {
-    font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
-    font-size: 1.1em;
-    line-height: 1.4em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
+
 dl.faq dt {
     color: #333333;
-    font-weight: bold;
 }
-.content dl.faq {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-.content li {
-    list-style-type: inherit;
-}
-.content ul, .content ol {
-    margin-bottom: 1em;
-    margin-left: 3em;
-}
+
 .posthilit {
     background-color: #f3f3f3;
     color: #bcbcbc;
@@ -1006,16 +915,10 @@ dl.faq dt {
     border-right-color: #bcbcbc;
 }
 p.author {
-    font-family: Verdana,Helvetica,Arial,sans-serif;
-    font-size: 1em;
-    line-height: 1.2em;
     margin: 0 15em 0.6em 0;
     padding: 0 0 5px;
 }
-.signature {
-    border-top: 1px solid #000;
 
-}
 dd .signature {
     border: medium none;
     clear: none;
@@ -1031,13 +934,7 @@ dd .signature {
 }
 .notice {
     border-top: 1px dashed #cccccc;
-    clear: left;
-    font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
-    font-size: 1em;
-    line-height: 130%;
-    margin-top: 1.5em;
-    padding-top: 0.2em;
-    width: auto;
+
 }
 ul.searchresults {
     clear: both;
@@ -1217,6 +1114,11 @@ dl.pmlist dd {
     margin-bottom: 2px;
     margin-left: 61% !important;
 }
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for buttons.css
+-------------------------------------------------------------- */
 .button {
     float: left;
     height: auto;
@@ -1262,7 +1164,8 @@ dl.pmlist dd {
 }
 
 .post-buttons .icon-button{
-    padding: 5px;
+    padding: 5px 7px;
+    background-image: none;
 }
 
 .reply-icon span {
@@ -1878,11 +1781,7 @@ fieldset.submit-buttons {
     text-align: center;
     vertical-align: middle;
 }
-fieldset.submit-buttons input {
-    padding-bottom: 3px;
-    padding-top: 3px;
-    vertical-align: middle;
-}
+
 #format-buttons {
     margin: 15px 0 2px;
 }
@@ -1940,14 +1839,7 @@ textarea.inputbox {
 input.button1, input.button2 {
     font-size: 1em;
 }
-a.button1, input.button1, input.button3, a.button2, input.button2 {
-    background: #fafafa none repeat-x scroll left top;
-    color: #000;
-    font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    width: auto !important;
-}
+
 a.button1, input.button1 {
     border: 1px solid #666666;
     font-weight: bold;
@@ -2137,9 +2029,7 @@ a.left:hover, a.right:hover {
     border-left-color: transparent;
     border-right-color: #fff;
 }
-ul.topiclist li.row dt a.subforum.read {
-    background-image: url("./images/subforum_read.gif");
-}
+
 ul.topiclist li.row dt a.subforum.unread {
     background-image: url("./images/subforum_unread.gif");
 }
@@ -2162,30 +2052,32 @@ dl.faq dt {
     background-color: #d2d9e0;
     color: #5f7187;
 }
+
+/* Post signature */
 .signature {
     border-top-color: #000;
 }
+
+/* Post noticies */
 .notice {
     border-top-color: #cccccc;
 }
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
 blockquote {
-    background-color: #ebeadd;
-    background-image: url("./images/quote.gif");
     border-color: #000;
-    color: #111;
+    background-image: url("./images/quote.gif");
 }
-.rtl blockquote {
-    background-image: url("./images/quote_rtl.gif");
-}
-blockquote blockquote {
-    background-color: #efeed9;
+blockquote blockquote, blockquote blockquote blockquote, blockquote {
     color: #111;
 }
 blockquote blockquote blockquote {
-    background-color: #ebeadd;
     color: #111;
 }
 
+/* Code block */
 .codebox {
     background-color: #ebeadd;
 }
@@ -2214,24 +2106,9 @@ dl.codebox code {
     background-image: -webkit-linear-gradient(left, #111111, #888888);
     background-image: linear-gradient(to right, #111111, #888888)
 }
-.syntaxbg {
-    color: #ffffff;
-}
-.syntaxcomment {
-    color: #ff8000;
-}
-.syntaxdefault {
-    color: #0000bb;
-}
-.syntaxhtml {
-    color: #000000;
-}
-.syntaxkeyword {
-    color: #007700;
-}
-.syntaxstring {
-    color: #dd0000;
-}
+
+/* Attachments
+----------------------------------------*/
 .attachbox {
     background-color: #ebeadd;
     border-color: #0f9be1;
@@ -2242,28 +2119,16 @@ dl.codebox code {
 .attachbox dd {
     border-top-color: #0f9be1;
 }
-.attachbox p {
-    color: #666666;
-}
-.attachbox p.stats {
-    color: #666666;
-}
+
 .attach-image img {
     border-color: #0f9be1;
 }
-dl.file dd {
-    color: #666666;
-}
+
 dl.thumbnail img {
     background-color: #ebeadd;
     border-color: #0f9be1;
 }
-dl.thumbnail dd {
-    color: #666666;
-}
-dl.thumbnail dt a:hover {
-    background-color: #eeeeee;
-}
+
 dl.thumbnail dt a:hover img {
     border-color: #0f9be1;
 }
@@ -2277,49 +2142,9 @@ fieldset.polls dl.voted {
 fieldset.polls dd div {
     color: #ebeadd;
 }
-.rtl .pollbar1, .rtl .pollbar2, .rtl .pollbar3, .rtl .pollbar4, .rtl .pollbar5 {
-    border-right-color: transparent;
-}
-.pollbar1 {
-    background-color: #aa2346;
-    border-bottom-color: #74162c;
-    border-right-color: #74162c;
-}
-.rtl .pollbar1 {
-    border-left-color: #74162c;
-}
-.pollbar2 {
-    background-color: #be1e4a;
-    border-bottom-color: #8c1c38;
-    border-right-color: #8c1c38;
-}
-.rtl .pollbar2 {
-    border-left-color: #8c1c38;
-}
-.pollbar3 {
-    background-color: #d11a4e;
-    border-bottom-color: #aa2346;
-    border-right-color: #aa2346;
-}
-.rtl .pollbar3 {
-    border-left-color: #aa2346;
-}
-.pollbar4 {
-    background-color: #e41653;
-    border-bottom-color: #be1e4a;
-    border-right-color: #be1e4a;
-}
-.rtl .pollbar4 {
-    border-left-color: #be1e4a;
-}
-.pollbar5 {
-    background-color: #f81157;
-    border-bottom-color: #d11a4e;
-    border-right-color: #d11a4e;
-}
-.rtl .pollbar5 {
-    border-left-color: #d11a4e;
-}
+
+/* Poster profile block
+----------------------------------------*/
 .postprofile {
     border-left-color: #000;
     color: #ddd;
@@ -2335,9 +2160,56 @@ fieldset.polls dd div {
     border-left-color: transparent;
     border-right-color: #dddddd;
 }
-.postprofile strong {
-    color: #000;
+
+.online .username-coloured:after,.online .left-box.details.profile-details span:after, .offline .username-coloured:after, .online .username-coloured:before,.online .left-box.details.profile-details span:before, .offline .username-coloured:before {
+   	color: #5CFF00;
+	font-size: 1em;
+	font-weight: normal;
+	text-shadow: 0 0 3px #5DF644;
+    font-family: "Courier New", Courier, monospace;
 }
+.online .username-coloured:before,.online .left-box.details.profile-details span:before, .offline .username-coloured:before{
+    padding-right: 4px;
+}
+
+.online .username-coloured:after,.online .left-box.details.profile-details span:after, .offline .username-coloured:after {
+    padding-left: 4px;
+}
+
+.online .username-coloured:after,.online .left-box.details.profile-details span:after, .online .username-coloured:before,.online .left-box.details.profile-details span:before {
+	content: url("./images/icons/icon_user_online_resp.png");
+}
+.offline .username-coloured:after, .offline .username-coloured:before {
+	content: url("./images/icons/icon_user_offline_resp.png");
+}
+.pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	color: #FFFFFF;
+	background-color: #1163d3;
+	border-color: #1163D2;
+	font-weight: bold;
+}
+.dropdown .dropdown-contents{
+    background-color: #676767;
+}
+
+.dropdown .pointer-inner{
+    border-color: #676767 transparent;
+}
+
+.dropdown-extended .header{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 25px, rgba(0, 0, 0, 1) 40px, rgba(76, 76, 76, 1) 80px, rgba(76, 76, 76, 1) 100%) repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.dropdown-extended ul li:hover {
+	background-color: #DCDEE2;
+	color: #000000;
+}
+
+.dropdown-select {
+    color: #adff6b;
+}
+
 
 #cp-main h3, #cp-main hr, #cp-menu hr {
     border-color: #a4b3bf;
@@ -2467,11 +2339,23 @@ fieldset.quick-login input.inputbox {
 #message-box textarea {
     color: #bbbbbb;
 }
+
+/* Input field styles
+---------------------------------------- */
 .inputbox {
     background-color: #777;
     border-color: #000;
     color: #000;
 }
+
+.inputbox:-moz-placeholder {
+	color: #000;
+}
+
+.inputbox::-webkit-input-placeholder {
+	color: #000;
+}
+
 .inputbox:hover {
     border-color: #fff;
 }
@@ -2479,10 +2363,17 @@ fieldset.quick-login input.inputbox {
     border-color: #000;
     color: #fff;
 }
+
+/* Form button styles
+---------------------------------------- */
 a.button1, input.button1, input.button3, a.button2, input.button2 {
     background-color: #fafafa;
-    background-image: url("./images/bg_button.gif");
-    color: #000;
+    background-image: linear-gradient(to bottom, #555555, #252525);
+    box-shadow: 0 0 0 1px #adff6b inset;
+    color: #eeeeee;
+    padding: 5px !important;
+    border-radius: 5px;
+    transition: all 0.5s;
 }
 a.button1, input.button1 {
     border-color: #666666;
@@ -2499,6 +2390,8 @@ a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.but
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
     border-color: #9f4ce0;
     color: #9f4ce0;
+    background-image: linear-gradient(to bottom, #252525, #555555);
+    box-shadow: 0 0 0 1px #9f4ce0 inset;
 }
 input.search {
     background-image: url("./images/icon_textbox_search.gif");
@@ -2613,51 +2506,8 @@ input.search {
 	background-image: url("./images/icons/icon_user_hidden.png");
 }
 */
-.online .username-coloured:after,.online .left-box.details.profile-details span:after, .offline .username-coloured:after, .online .username-coloured:before,.online .left-box.details.profile-details span:before, .offline .username-coloured:before {
-   	color: #5CFF00;
-	font-size: 1em;
-	font-weight: normal;
-	text-shadow: 0 0 3px #5DF644;
-    font-family: "Courier New", Courier, monospace;
-}
-.online .username-coloured:before,.online .left-box.details.profile-details span:before, .offline .username-coloured:before{
-    padding-right: 4px;
-}
 
-.online .username-coloured:after,.online .left-box.details.profile-details span:after, .offline .username-coloured:after {
-    padding-left: 4px;
-}
-
-.online .username-coloured:after,.online .left-box.details.profile-details span:after, .online .username-coloured:before,.online .left-box.details.profile-details span:before {
-	content: url("./images/icons/icon_user_online_resp.png");
-}
-.offline .username-coloured:after, .offline .username-coloured:before {
-	content: url("./images/icons/icon_user_offline_resp.png");
-}
-.pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	color: #FFFFFF;
-	background-color: #1163d3;
-	border-color: #1163D2;
-	font-weight: bold;
-}
-.dropdown .dropdown-contents{
-    background-color: #676767;
-}
-
-.dropdown .pointer-inner{
-    border-color: #676767 transparent;
-}
-
-.dropdown-extended .header{
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 25px, rgba(0, 0, 0, 1) 40px, rgba(76, 76, 76, 1) 80px, rgba(76, 76, 76, 1) 100%) repeat scroll 0 0;
-    color: #ffffff;
-}
-
-.dropdown-extended ul li:hover {
-	background-color: #DCDEE2;
-	color: #000000;
-}
-
-.dropdown-select {
-    color: #adff6b;
+#smiley-box img {
+    height: auto;
+    max-width: 35px;
 }
